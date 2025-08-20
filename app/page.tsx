@@ -142,7 +142,7 @@ const fetchColaboradores = async () => {
   setError(null)
   try {
     const response = await fetch(`${API_BASE_URL}/colaboradores`, {
-      headers: { "x-projeto": "projetoC" } // define projetoC
+      headers: { "x-projeto": "projetoF" } // define projetoF
     })
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`)
     const data = await response.json()
@@ -160,7 +160,7 @@ const fetchAtividades = async () => {
   setError(null)
   try {
     const response = await fetch(`${API_BASE_URL}/atividades`, {
-      headers: { "x-projeto": "projetoC" } // define projetoC
+      headers: { "x-projeto": "projetoF" } // define projetoF
     })
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`)
     const data = await response.json()
@@ -470,7 +470,7 @@ const fetchAtividades = async () => {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
-             'x-projeto': 'projetoC'
+             'x-projeto': 'projetoF'
           },
           body: JSON.stringify(colaboradorForm),
         });
@@ -480,7 +480,7 @@ const fetchAtividades = async () => {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-             'x-projeto': 'projetoC'
+             'x-projeto': 'projetoF'
           },
           body: JSON.stringify(colaboradorForm),
         });
@@ -516,7 +516,7 @@ const fetchAtividades = async () => {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
-             'x-projeto': 'projetoC'
+             'x-projeto': 'projetF'
           },
         });
 
@@ -583,7 +583,7 @@ const saveAtividade = async () => {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
-          'x-projeto': 'projetoC'
+          'x-projeto': 'projetoF'
         },
         body: JSON.stringify(dataToSend),
       });
@@ -593,7 +593,7 @@ const saveAtividade = async () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'x-projeto': 'projetoC'
+          'x-projeto': 'projetoF'
         },
         body: JSON.stringify(dataToSend),
       });
@@ -648,7 +648,7 @@ const deleteAtividade = async (id) => {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
-          'x-projeto': 'projetoC'
+          'x-projeto': 'projetoF'
         },
       });
 
